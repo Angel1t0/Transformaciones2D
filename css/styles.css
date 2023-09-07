@@ -1,36 +1,131 @@
+/* Reset CSS */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* HTML and Body Styles */
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
-
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f3eee7;
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
 }
 
+/* Heading Styles */
 h1 {
-    font-size: 2.5rem;
-    margin: 1.5rem 0;
-    color: #12242e;
-    text-align: center;
+  font-size: 2.5rem;
+  margin: 1.5rem 0;
+  color: #fff;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
 }
 
+/* Main Container */
 .main-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Canvas Styles */
 canvas {
-    background-color: white;
+  background-color: #fff;
 }
 
+/* Form Styles */
 form {
-    color: #273337;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0.5rem 1.5rem;
+}
+
+/* Label Styles */
+label {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin: 0.8rem;
+}
+
+/* Text Input Styles */
+form input[type="text"] {
+  width: 33%;
+  height: 2.5rem;
+  margin: 0.5rem;
+  margin-bottom: 1.5em;
+  border-radius: 0.25rem;
+  border: 1px solid #eeeef0;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* Checkbox Styles */
+form input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  margin: 0.5rem 0.1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #fff;
+  font-size: 0.5rem;
+  outline: none;
+  filter: invert(100%);
+}
+
+/* Sidebar Container */
+.input-content {
+  background-color: #353945;
+  height: 100vh;
+  width: 40vw;
+}
+
+/* Canvas Container */
+.canvas-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 45vw;
+  background-color: #eeeef0;
+}
+
+/* Vertices Input Width */
+#vertices {
+  width: 70%;
+}
+
+/* Button Styles */
+.button {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background: #141416;
+  border-radius: 5.625rem;
+  border: none;
+  padding: 0.9rem 1rem;
+  width: 8rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #1c1c1e;
+}
+
+/* Extra Spacing for Traslacion Checkbox */
+#option-traslacion {
+  margin-left: 1rem;
+}
+
+/* Flexbox Layout for Options */
+.opciones,
+.last-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
