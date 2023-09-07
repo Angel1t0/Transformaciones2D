@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" async></script>
+    <title>Transformaciones 2D</title>
+</head>
+<body>
+    <header>
+        <h1>Transformaciones 2D</h1>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="input-content">
+                <form action="#" method="get">
+                    <section class="vertice-input">
+                        <label for="vertices">Vértices del polígono:</label>
+                        <br>
+                        <input type="text" id="vertices" placeholder="(x1, y1), (x2, y2), ..., (xn, yn)">
+                        <input type="submit" value="Dibujar" class="button" id="button-dibujar">
+                    </section>
+
+                    <section class="traslacion-input">
+                        <label for="traslacion-1" id="traslacion">Traslación:</label>
+                        <br>
+                        <input type="text" id="dx" placeholder="dx">
+                        <input type="text" id="dy" placeholder="dy">
+                        <input type="submit" value="Traslación" class="button" id="button-traslacion">
+                    </section>
+
+                    <section class="escalamiento-input">
+                        <label for="escalamiento-1" id="escalamiento">Escalamiento:</label>
+                        <br>
+                        <input type="text" id="sx">
+                        <input type="text" id="sy">
+                        <input type="submit" value="Escalamiento" class="button" id="button-escalamiento">
+
+                    </section>
+                    
+                    <section class="rotacion-input">
+                        <label for="rotacion" id="rotacion">Rotación:</label>
+                        <br>
+                        <input type="text" id="angulo">
+                        <input type="submit" value="Rotación" class="button" id="button-rotacion">
+                    </section>
+
+                    <section class="sesgado-input">
+                        <label for="sesgado-1" id="sesgado">Sesgado:</label>
+                        <br>
+                        <input type="text" id="shx">
+                        <input type="text" id="shy">
+                        <input type="submit" value="Sesgado" class="button" id="button-sesgado">
+                    </section>
+
+                    <section class="combinar-transformaciones">
+                        <label for="combinar" id="combinar">Combinar:</label>
+                        <br>
+                        <input type="checkbox" id="option-traslacion" value="opcion-1">
+                        <label for="option-traslacion">Traslación</label>
+                        <input type="checkbox" id="option-escalamiento" value="opcion-2">
+                        <label for="option-escalamiento">Escalamiento</label>
+                        <input type="checkbox" id="option-rotacion" value="opcion-3">
+                        <label for="option-rotacion">Rotación</label>
+                        <input type="checkbox" id="option-sesgado" value="opcion-4">
+                        <label for="option-sesgado">Sesgado</label>
+                        <br>
+                        <input type="submit" id="button-combinar" value="Combinar" class="button">
+                    </section>
+                    <input type="submit" id="button-limpiar" value="Limpiar" class="button">
+                </form>
+            </div>
+            <canvas id="main-canvas" width="620px" height="620px"></canvas>
+        </div>
+
+    </main>
+</body>
+</html>
